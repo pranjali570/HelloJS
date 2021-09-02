@@ -1,6 +1,30 @@
-console.log("Hello")
-console.log({name : "Hello"})
+// datatypes
+// two types
 
-console.log(false, 23546, "string", {key:"value"})
+// primitive data types
 
-console.warn("Warning!!!")
+
+var Name = "david"
+console.log(Name)
+console.log(typeof Name)
+
+let age = 19
+console.log(age)
+console.log(typeof age)
+
+let check = true
+let uncheck = false
+
+let brand
+console.log(brand)
+
+console.log(typeof null)
+console.log(typeof undefined)
+
+// non primitive data types
+
+
+let arr = [0, 1, 2, 3, 4]
+arr.push("value")
+arr.push(true)
+console.log(arr)
