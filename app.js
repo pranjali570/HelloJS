@@ -1,6 +1,7 @@
-//constants
+// Coercion
 
-const My_Name = "Pranjali"
+let My_Name = "Pranjali"
 My_Name = "Pranjali Agrawal"
 
-console.log(My_Name)
+console.log(My_Name.toUpperCase())
+
