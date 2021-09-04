@@ -1,16 +1,37 @@
-// DOM- Document Object Model
-
-const element = document.getElementById('selectme')
+const element = document.querySelector('#selectme')
 console.log(element)
 
-const element2 = document.getElementsByClassName('heading')
-console.log(element2)
+// to change content of element
 
-const element3 = document.getElementsByTagName('span')
-console.log(element3)
+element.innerHTML = "modified content using javaScript"
+console.log(element)
 
-const element4 = document.querySelector('.heading')
-console.log(element4)
+// to change styles
+ 
+element.style = 'margin:auto'
+element.style = 'width:80%'
+element.style.color = "cyan"
+element.style.fontSize = "40px"
 
-const element5 = document.querySelectorAll('.heading')
-console.log(element5)
+// to show classlist
+
+console.log(element.classList)
+
+// to add class 
+
+element.classList.add('five')
+console.log(element.classList)
+
+// to remove class
+
+element.classList.remove('two')
+console.log(element.classList)
+
+//to check class and accordingly add and remove the class
+const body = document.querySelector('body')
+console.log(body.classList.toggle('dark'))
+
+// to check element contains the class specified or not
+const value = element.classList.contains('three')
+console.log(value)
+
