@@ -1,7 +1,16 @@
-// Coercion
+// DOM- Document Object Model
 
-let My_Name = "Pranjali"
-My_Name = "Pranjali Agrawal"
+const element = document.getElementById('selectme')
+console.log(element)
 
-console.log(My_Name.toUpperCase())
+const element2 = document.getElementsByClassName('heading')
+console.log(element2)
 
+const element3 = document.getElementsByTagName('span')
+console.log(element3)
+
+const element4 = document.querySelector('.heading')
+console.log(element4)
+
+const element5 = document.querySelectorAll('.heading')
+console.log(element5)
