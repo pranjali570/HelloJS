@@ -2,16 +2,15 @@
 // const paper = document.querySelector('#paper')
 // const scissor = document.querySelector('#scissor')
 
-function logName(Name = "name"){
-    console.log(Name)   
+const Name= () => {
+    console.log("Hello Pranjali!! ")
 }
 
-logName('Pranjali')
+Name()
 
-console.log(add(12, 9))
-
-function add(a = 0, b = 0){
-    const sum = a + b
-    return sum
+const add = (a = 0, b = 0) => {
+    return a + b
 }
 
+
+console.log(add(12, 23))
