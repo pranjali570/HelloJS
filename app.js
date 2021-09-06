@@ -1,7 +1,17 @@
-// Coercion
+// const rock = document.querySelector('#rock')
+// const paper = document.querySelector('#paper')
+// const scissor = document.querySelector('#scissor')
 
-let My_Name = "Pranjali"
-My_Name = "Pranjali Agrawal"
+function logName(Name = "name"){
+    console.log(Name)   
+}
 
-console.log(My_Name.toUpperCase())
+logName('Pranjali')
+
+console.log(add(12, 9))
+
+function add(a = 0, b = 0){
+    const sum = a + b
+    return sum
+}
 
