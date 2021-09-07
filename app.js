@@ -1,7 +1,6 @@
-// Coercion
+let i
 
-let My_Name = "Pranjali"
-My_Name = "Pranjali Agrawal"
-
-console.log(My_Name.toUpperCase())
-
+for(i = 0; i < 10; ++i)
+{
+    console.log('iteration ' + i)
+}
