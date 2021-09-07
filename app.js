@@ -1,6 +1,7 @@
-let i
+let iteration = 1
 
-for(i = 0; i < 10; ++i)
+while(iteration <= 10)
 {
-    console.log('iteration ' + i)
+    console.log(iteration)
+    iteration++
 }
