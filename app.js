@@ -24,5 +24,3 @@ arr.splice(6, 1)
 arr.forEach((element, iteration) => {
     console.log(element + '-->' + iteration)
 })
-
-
