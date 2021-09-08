@@ -1,47 +1,48 @@
-const arr = [1, 2, 3, 4]
-console.log(arr[2])
+ function Name(fullname){
+     return fullname
+ }
+console.log(Name("Pranjali Agrawal"))
 
-// ES6 Destructuring
-const [one, two, three, four, five] = [1, 2, 3, 4]
-console.log(three)
-console.log(four)
-console.log(five)
-
-function getscores(){
-    return [90, 100]
+let add = function add(x, y){
+         return x+y
 }
+console.log(add)
+console.log(add(10, 47))
 
-let [x, y, z] = getscores()
-
-console.log(x)
-console.log(y)
-console.log(z)
-
-const obj = {
-    Name: "Nikhil Agarwal",
-    email: "nikhilagarwaliitkgp@gmail.com",
-    age: 20
+let subtract = (a, b) => {
+    return a - b;
 }
+console.log(subtract(17, 9))
 
-console.log(obj.email)
 
-let {dum, Name, age, email} = obj
-console.log(email)
-console.log(age)
-console.log(Name)
-console.log(dum)
-
-let person = {
-    firstname: "Pranjali",
-    lastname: "Agrawal"
+const counter = {
+    count: 0,
+    next: function() {
+        return ++(this.count)
+    },
+    // previous: () => {
+    //     return (this.count)--
+    // },
+    // previous: () => {
+    //     return --(counter.count)
+    // },
+    previous: function() {
+        return --(this.count)
+    },
+    key1: () => {
+        return this
+    },
+    key2: this.location.href
 }
-
-let {firstname = "", middlename = "", lastname = ""} = person
-console.log(firstname, middlename, lastname)
-
-
-let nums = [[1, 2, 3],[4, 5, 6]]
-// let [num1, num2] = nums
-// console.log(num1)
-let [[num11, num12, num13], [num21, num22, num23]] = nums
-console.log(num11)
+console.log(counter)
+console.log(counter.next())
+console.log(counter)
+console.log(counter.next())
+console.log(counter)
+console.log(counter.next())
+console.log(counter)
+console.log(counter.previous())
+console.log(counter)
+console.log(counter.key1())
+console.log(counter.key2)
+    
