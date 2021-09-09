@@ -1,31 +1,21 @@
-let ranks = [1, 2, 3, 4, 5, 6]
-// const newArr = ranks.map(
-//     (e) => {
-//         console.log(e+1)
-//     }
-// )
-// console.log(newArr)
+// let concert = true;
+let concert = false;
 
-console.log(ranks.map((index, e) => { 
-    return(index)
-})) 
+let attendConcert = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        if (concert) {
+            resolve("BOB ATTENDED THE CONCERT")
+        }
+        else {
+            reject("BOB FAILED TO ATTEND THE CONCERT")
+        }
+    }, 2000)
+});
 
-console.log(ranks.map((e, index) => { 
-    return(e * 100)
-})) 
+console.log(attendConcert)
+console.log(attendConcert)
 
-console.log(
-    ranks.forEach((e, index) => {
-      return e * 100;
-    })
-  );
-  
-  let newarr = ranks.map((e, index) => {
-      console.log(e)
-      console.log(index)
-      if(e%2 === 0)
-          return e
-  })
+// attendConcert.then((data) => console.log(data))
+// attendConcert.catch((error) => console.log(error))
 
-  console.log(newarr);
-  
+attendConcert.then((data) => console.log(data)).catch((error) => console.log(error))
