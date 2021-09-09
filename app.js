@@ -1,48 +1,31 @@
- function Name(fullname){
-     return fullname
- }
-console.log(Name("Pranjali Agrawal"))
+let ranks = [1, 2, 3, 4, 5, 6]
+// const newArr = ranks.map(
+//     (e) => {
+//         console.log(e+1)
+//     }
+// )
+// console.log(newArr)
 
-let add = function add(x, y){
-         return x+y
-}
-console.log(add)
-console.log(add(10, 47))
+console.log(ranks.map((index, e) => { 
+    return(index)
+})) 
 
-let subtract = (a, b) => {
-    return a - b;
-}
-console.log(subtract(17, 9))
+console.log(ranks.map((e, index) => { 
+    return(e * 100)
+})) 
 
+console.log(
+    ranks.forEach((e, index) => {
+      return e * 100;
+    })
+  );
+  
+  let newarr = ranks.map((e, index) => {
+      console.log(e)
+      console.log(index)
+      if(e%2 === 0)
+          return e
+  })
 
-const counter = {
-    count: 0,
-    next: function() {
-        return ++(this.count)
-    },
-    // previous: () => {
-    //     return (this.count)--
-    // },
-    // previous: () => {
-    //     return --(counter.count)
-    // },
-    previous: function() {
-        return --(this.count)
-    },
-    key1: () => {
-        return this
-    },
-    key2: this.location.href
-}
-console.log(counter)
-console.log(counter.next())
-console.log(counter)
-console.log(counter.next())
-console.log(counter)
-console.log(counter.next())
-console.log(counter)
-console.log(counter.previous())
-console.log(counter)
-console.log(counter.key1())
-console.log(counter.key2)
-    
+  console.log(newarr);
+  
